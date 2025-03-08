@@ -1,0 +1,28 @@
+<header class="bg-white shadow-md fixed w-full z-50">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-primary">Your Name</a>
+        
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex space-x-8">
+            <li><a href="#about" class="text-secondary font-medium hover:text-primary transition-colors">About</a></li>
+            <li><a href="#projects" class="text-secondary font-medium hover:text-primary transition-colors">Projects</a></li>
+            <li><a href="#contact" class="text-secondary font-medium hover:text-primary transition-colors">Contact</a></li>
+        </ul>
+        
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden cursor-pointer" id="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-secondary">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <div class="md:hidden hidden bg-white w-full shadow-md" id="mobile-menu">
+        <ul class="container mx-auto px-6 py-3 space-y-3">
+            <li><a href="#about" class="block text-secondary font-medium hover:text-primary transition-colors">About</a></li>
+            <li><a href="#projects" class="block text-secondary font-medium hover:text-primary transition-colors">Projects</a></li>
+            <li><a href="#contact" class="block text-secondary font-medium hover:text-primary transition-colors">Contact</a></li>
+        </ul>
+    </div>
+</header>
