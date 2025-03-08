@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from "./components/hero/hero.component";
 import { AboutComponent } from "./components/about/about.component";
+import { ProjectsComponent } from "./components/projects/projects.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, HeroComponent, AboutComponent],
+  imports: [CommonModule, HeaderComponent, HeroComponent, AboutComponent, ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
