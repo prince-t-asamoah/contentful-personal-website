@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ContentModel, ContentModelType } from '../../model/content.model';
 
 @Component({
   selector: 'app-hero',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   templateUrl: './hero.component.html',
 })
 export class HeroComponent {
+  @Input({ required: true }) content: ContentModelType['hero'] | null = null;
 
+  // get content() {
+  //   const heroContent = this._content?.fields['hero'];
+  //   return heroContent;
+  // }
 }
